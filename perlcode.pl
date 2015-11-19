@@ -44,8 +44,8 @@ print " T:$countT\n";
 print " G:$countG\n";
 print " C:$countC\n";
 $sum = $randomcount + $countA +$countT +$countC + $countG;
-$percentageAT = $countA + $countT;
-my $percentageGC = ($countG + $countC)*100;
+my $percentageAT = ($countA + $countT)*100/$sum;
+my $percentageGC = ($countG + $countC)*100/$sum;
 
 print "percentage AT $percentageAT\n";
 print "percentage GC $percentageGC\n";
